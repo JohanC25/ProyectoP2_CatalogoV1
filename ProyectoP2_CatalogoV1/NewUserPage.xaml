@@ -9,10 +9,42 @@
 
             <VerticalStackLayout Spacing="5">
                 <Label Text="Crear Usuario Nuevo" FontSize="32" TextColor="Gray" HorizontalTextAlignment="Center" />
-                <Label Text="Inicie sesión para acceder" FontSize="18" TextColor="Gray" HorizontalTextAlignment="Center" />
+                <Label Text="Llene los siguientes campos" FontSize="18" TextColor="Gray" HorizontalTextAlignment="Center" />
             </VerticalStackLayout>
-            
+
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Nombre Usuario" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+                <Frame HeightRequest="45" Margin="20,0,0,0" Padding="0"  HasShadow="True" BorderColor="White" HorizontalOptions="FillAndExpand" >
+                    <Entry Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Nombre de Usuario" Keyboard="Email" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Contraseña" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+                <Frame HeightRequest="45" WidthRequest="210" Margin="20,0,0,0" Padding="0"  HasShadow="True" BorderColor="White" HorizontalOptions="EndAndExpand" >
+                    <Entry Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Contraseña" Keyboard="Email" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Confirmar" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+                <Frame HeightRequest="45" WidthRequest="210" Margin="20,0,0,0" Padding="0"  HasShadow="True" BorderColor="White" HorizontalOptions="EndAndExpand" >
+                    <Entry Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Confirmar Contraseña" Keyboard="Email" />
+                </Frame>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Telefono" HorizontalOptions="Start" VerticalOptions="CenterAndExpand"/>
+                <Frame HeightRequest="45" WidthRequest="210" Margin="20,0,0,0" Padding="0"  HasShadow="True" BorderColor="White" HorizontalOptions="EndAndExpand" >
+                    <Entry Margin="20,0,0,0" VerticalOptions="Center" Placeholder="Nombre de Usuario" Keyboard="Email" />
+                </Frame>
+            </StackLayout>
+            <Grid ColumnDefinitions="*,*" ColumnSpacing="4">
+                <Button Text="Crear Usuario" VerticalOptions="StartAndExpand"  HorizontalOptions="CenterAndExpand" Grid.Column="3"/>
+                <Button Text="Regresar" VerticalOptions="StartAndExpand"  HorizontalOptions="CenterAndExpand" Grid.Column="0"/>
+            </Grid>
         </VerticalStackLayout>
         
     </ScrollView>
+    
 </ContentPage>

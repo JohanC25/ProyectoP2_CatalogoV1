@@ -42,9 +42,14 @@
 
             <StackLayout Orientation="Horizontal" Spacing="5" HorizontalOptions="Center" >
                 <Label Text="No tienes una cuenta?" TextColor="Gray" />
-                <Label Text="Crear una cuenta" TextColor="#50b3f2" />
             </StackLayout>
-            
+            <StackLayout >
+                <Button x:Name="Btn_CrearUser" Text="Crear una cuenta" 
+                        TextColor="#50b3f2" BackgroundColor="White" 
+                        HorizontalOptions="Center" VerticalOptions="Center"
+                        Clicked="Btn_CrearUser_Clicked"/>
+            </StackLayout>
+
         </VerticalStackLayout>
     </ScrollView>
 

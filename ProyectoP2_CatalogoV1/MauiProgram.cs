@@ -15,4 +15,9 @@ public static class MauiProgram
 
 		return builder.Build();
 	}
+
+	//public static async void OnButtonClicked(Object sender, EventArgs e)
+	//{
+		//await Navigation.PushModalAsync(new NewUserPage);
+	//}
 }
