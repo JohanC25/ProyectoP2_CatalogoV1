@@ -4,11 +4,39 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:ProyectoP2_CatalogoV1"
-    Shell.FlyoutBehavior="Disabled">
+    FlyoutBehavior="Flyout">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <Shell.FlyoutHeader >
+        <Grid HeightRequest="100" BackgroundColor="Black" >
+            <Image Source="logo_udla.jpg" />
+        </Grid>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Login"
+                Icon="user.png">
+        
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}" />
+        </Tab>
+
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Productos"
+                Icon="producto.png">
+
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:ProductosPage}" />
+        </Tab>
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="Usuarios"
+                Icon="all_users.png">
+
+        <Tab>
+            <ShellContent ContentTemplate="{DataTemplate local:ProductosPage}" />
+        </Tab>
+
+    </FlyoutItem>
 
 </Shell>
