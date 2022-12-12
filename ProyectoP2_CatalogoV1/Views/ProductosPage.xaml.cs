@@ -1,4 +1,4 @@
-namespace ProyectoP2_CatalogoV1;
+namespace ProyectoP2_CatalogoV1.Views;
 
 public partial class ProductosPage : ContentPage
 {

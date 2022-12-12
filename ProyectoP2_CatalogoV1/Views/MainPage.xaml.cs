@@ -1,15 +1,15 @@
-﻿namespace ProyectoP2_CatalogoV1;
+﻿namespace ProyectoP2_CatalogoV1.Views;
 
 public partial class MainPage : ContentPage
 {
-	public MainPage()
-	{
-		InitializeComponent();
-	}
+    public MainPage()
+    {
+        InitializeComponent();
+    }
 
     private async void Btn_CrearUser_Clicked(object sender, EventArgs e)
     {
-		await Navigation.PushModalAsync(new NewUserPage());
+        await Navigation.PushModalAsync(new NewUserPage());
     }
 
     private async void Btn_IniciarSesion_Clicked(object sender, EventArgs e)

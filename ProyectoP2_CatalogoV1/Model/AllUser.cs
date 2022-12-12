@@ -1,17 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.ObjectModel;
 
-namespace ProyectoP2_CatalogoV1
+namespace ProyectoP2_CatalogoV1.Model
 {
     class AllUser
     {
         public ObservableCollection<User> Users { get; set; } = new ObservableCollection<User>();
 
-        public AllUser() => VerUsuarios();
+        public AllUser() =>
+            VerUsuarios();
 
         public void VerUsuarios()
         {

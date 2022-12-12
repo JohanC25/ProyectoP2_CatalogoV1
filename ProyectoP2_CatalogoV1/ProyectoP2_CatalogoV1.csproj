@@ -59,13 +59,19 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="AllUsers.xaml">
+	  <Compile Update="Views\AllUsersPage.xaml.cs">
+	    <DependentUpon>AllUsersPage.xaml</DependentUpon>
+	  </Compile>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Update="Views\AllUsersPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="NewUserPage.xaml">
+	  <MauiXaml Update="Views\NewUserPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="ProductosPage.xaml">
+	  <MauiXaml Update="Views\ProductosPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	</ItemGroup>

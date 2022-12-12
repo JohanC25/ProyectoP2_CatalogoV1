@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProyectoP2_CatalogoV1.NewUserPage"
+             x:Class="ProyectoP2_CatalogoV1.Views.NewUserPage"
              Title="Nuevo Usuario">
     <ScrollView>
         <VerticalStackLayout Spacing="25" 
@@ -40,6 +40,7 @@
                            VerticalOptions="Center" 
                            Placeholder="Nombre de Usuario" 
                            x:Name="NombreUsuario"
+                           Text="{Binding NombreUsuario}"
                            Keyboard="Chat" />
                     
                 </Frame>
@@ -63,6 +64,7 @@
                            VerticalOptions="Center" 
                            Placeholder="Contraseña" 
                            x:Name="Password"
+                           Text="{Binding Contraseña}"
                            Keyboard="Chat" />
                     
                 </Frame>
@@ -87,6 +89,7 @@
                            VerticalOptions="Center" 
                            Placeholder="Confirmar Contraseña" 
                            x:Name="ConfirmPassword"
+                           Text="{Binding ConfirmarPassword}"
                            Keyboard="Chat" />
                     
                 </Frame>
@@ -110,6 +113,7 @@
                            VerticalOptions="Center" 
                            Placeholder="Telefono" 
                            x:Name="Telefono"
+                           Text="{Binding Telefono}"
                            Keyboard="Numeric" />
                     
                 </Frame>
@@ -130,6 +134,7 @@
                         Grid.Column="0"
                         Clicked="Btn_Regresar_Clicked"/>
             </Grid>
+            
             
         </VerticalStackLayout>
         

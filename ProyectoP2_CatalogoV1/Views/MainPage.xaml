@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="ProyectoP2_CatalogoV1.MainPage">
+             x:Class="ProyectoP2_CatalogoV1.Views.MainPage">
 
     <ScrollView>
         <VerticalStackLayout
@@ -48,7 +48,7 @@
                        BorderColor="White" 
                        HorizontalOptions="FillAndExpand" >
                     
-                    <Entry Margin="20,0,0,0" 
+                    <Editor Margin="20,0,0,0" 
                            VerticalOptions="Center" 
                            Placeholder="Nombre de Usuario" 
                            Keyboard="Email" />
@@ -77,10 +77,10 @@
                        BorderColor="White" 
                        HorizontalOptions="FillAndExpand" >
                     
-                    <Entry Margin="20,0,0,0" 
+                    <Editor Margin="20,0,0,0" 
                            VerticalOptions="Center" 
                            Placeholder="Contraseña" 
-                           IsPassword="True" 
+                            
                            Keyboard="Email" />
                     
                 </Frame>
