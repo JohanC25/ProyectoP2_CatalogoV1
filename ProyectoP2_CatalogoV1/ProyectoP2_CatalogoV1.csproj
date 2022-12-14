@@ -49,6 +49,8 @@
 	<ItemGroup>
 	  <None Remove="Resources\AppIcon\appicon.png" />
 	  <None Remove="Resources\Images\all_users.png" />
+	  <None Remove="Resources\Images\cellphone.png" />
+	  <None Remove="Resources\Images\laptop.png" />
 	  <None Remove="Resources\Images\producto.png" />
 	  <None Remove="Resources\Images\productos.png" />
 	  <None Remove="Resources\Images\user_add.png" />

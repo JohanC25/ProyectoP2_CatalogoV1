@@ -6,12 +6,12 @@ public partial class AllUsersPage : ContentPage
 	{
 		InitializeComponent();
 
-        BindingContext = Model.AllUser();
+        BindingContext = new Model.AllUser();
 	}
 
     protected override void OnAppearing()
     {
-        ((Model.AllUser)BindingContext).LoadUser();
+        ((Model.AllUser)BindingContext).VerUsuarios();
     }
 
     private async void Add_Clicked(object sender, EventArgs e)
@@ -23,7 +23,7 @@ public partial class AllUsersPage : ContentPage
     {
         if (e.CurrentSelection.Count != 0)
         {
-            var users = (Models.User)e.CurrentSelection[0];
+            var users = (Model.User)e.CurrentSelection[0];
 
             await Shell.Current.GoToAsync($"{nameof(NewUserPage)}?{nameof(NewUserPage.ItemId)}={users.Filename}");
 

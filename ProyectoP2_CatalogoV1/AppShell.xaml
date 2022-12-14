@@ -34,7 +34,7 @@
                 Icon="all_users.png">
 
         <Tab>
-            <ShellContent ContentTemplate="{DataTemplate local:ProductosPage}" />
+            <ShellContent ContentTemplate="{DataTemplate local:AllUsersPage}" />
         </Tab>
 
     </FlyoutItem>

@@ -6,4 +6,9 @@ public partial class ProductosPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private async void Btn_LogOut_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushModalAsync(new MainPage());
+    }
 }
